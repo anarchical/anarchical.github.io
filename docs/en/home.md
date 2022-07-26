@@ -7,11 +7,11 @@ heroText: Project name
 tagline: You can place the description of the project here.
 actions:
   - text: How to Use 💡
-    link: /guide/
+    link: /en/guide/
     type: primary
 
   - text: Blog homepage 🏠
-    link: /
+    link: /en/
 
 features:
   - title: Markdown Enhance

@@ -55,7 +55,7 @@ export default hopeTheme({
   },
 
   locales: {
-    "/": {
+    "/en/": {
       // navbar
       navbar: navbar.en,
 
@@ -67,8 +67,8 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
-        description: "A FrontEnd programmer",
-        intro: "/intro.html",
+        description: "Aaa FrontEnd programmer",
+        intro: "/en/intro.html",
       },
     },
 
@@ -95,7 +95,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      "/guide/encrypt.html": ["1234"],
+      "/en/guide/encrypt.html": ["1234"],
       "/zh/guide/encrypt.html": ["1234"],
     },
   },
