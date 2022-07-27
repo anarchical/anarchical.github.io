@@ -8,10 +8,10 @@ category:
 
 ## Catalog
 
-- [Markdown Enhance](docs/en/guide/markdown.md)
+- [Markdown Enhance](markdown.md)
 
-- [Page Config](docs/en/guide/page.md)
+- [Page Config](page.md)
 
-- [Function Disable](docs/en/guide/disable.md)
+- [Function Disable](disable.md)
 
-- [Encryption Demo](docs/en/guide/encrypt.md)
+- [Encryption Demo](encrypt.md)

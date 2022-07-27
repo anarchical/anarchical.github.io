@@ -1,5 +1,6 @@
-import { defineUserConfig } from "vuepress";
+import {defineUserConfig} from "vuepress";
 import theme from "./theme";
+import {redirectPlugin} from "vuepress-plugin-redirect";
 
 export default defineUserConfig({
   base: "/",
@@ -16,6 +17,12 @@ export default defineUserConfig({
       description: "vuepress-theme-hope 的演示",
     },
   },
-
+  plugins: [
+    redirectPlugin({
+      config: {
+        "/": "/zh/",
+      },
+    }),
+  ],
   theme,
 });

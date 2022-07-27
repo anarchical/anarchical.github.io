@@ -4,12 +4,14 @@ specifiers:
   '@vuepress/client': ^2.0.0-beta.49
   vue: ^3.2.36
   vuepress: ^2.0.0-beta.49
+  vuepress-plugin-redirect: 2.0.0-beta.87
   vuepress-theme-hope: ^2.0.0-beta.87
 
 devDependencies:
   '@vuepress/client': 2.0.0-beta.49
   vue: 3.2.37
   vuepress: 2.0.0-beta.49_2swkti5cn42xfigpmsn6ifcgpu
+  vuepress-plugin-redirect: 2.0.0-beta.87
   vuepress-theme-hope: 2.0.0-beta.87
 
 packages:
@@ -4631,6 +4633,20 @@ packages:
   /vuepress-plugin-reading-time2/2.0.0-beta.87:
     resolution: {integrity: sha512-LrEQmfYBpnd8U36jZvzrobVvx5Pl6dSL/kN1m/s/DlKm60hsHuHytLv8l1DYIwRNq9mE082P9mywd1FddaCJQg==}
     dependencies:
+      vuepress-shared: 2.0.0-beta.87
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /vuepress-plugin-redirect/2.0.0-beta.87:
+    resolution: {integrity: sha512-qNw+QB9FoF1JkYp3zAZsS/rgPdPEH6TMnqcoD6ZUbj5yzcDRB6ds9zczs7z8sOECO56OshAUXK4wz2iGrNBPhA==}
+    hasBin: true
+    dependencies:
+      '@vuepress/cli': 2.0.0-beta.49
+      '@vuepress/core': 2.0.0-beta.49
+      '@vuepress/shared': 2.0.0-beta.49
+      '@vuepress/utils': 2.0.0-beta.49
+      cac: 6.7.12
       vuepress-shared: 2.0.0-beta.87
     transitivePeerDependencies:
       - supports-color
