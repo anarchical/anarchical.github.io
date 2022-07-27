@@ -75,7 +75,7 @@ export default hopeTheme({
     /**
      * Chinese locale config
      */
-    "/zh/": {
+    "/": {
       // navbar
       navbar: navbar.zh,
 
@@ -88,15 +88,14 @@ export default hopeTheme({
 
       blog: {
         description: "一个前端开发者",
-        intro: "/zh/intro.html",
+        intro: "/intro.html",
       },
     },
   },
 
   encrypt: {
     config: {
-      "/en/guide/encrypt.html": ["1234"],
-      "/zh/guide/encrypt.html": ["1234"],
+      "/guide/encrypt.html": ["1234"],
     },
   },
 
