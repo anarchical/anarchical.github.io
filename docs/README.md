@@ -5,7 +5,7 @@ icon: home
 title: 主页
 heroText: 𝒵
 heroFullScreen: true
-tagline: "革命尚未成功，同志仍需努力！"</br>—— 毛泽东
+tagline: 革命尚未成功，同志仍需努力！</br>—— 毛泽东
 bgImage: https://raw.githubusercontent.com/anarchical/anarchical.github.io/main/docs/.vuepress/public/bg.jpg
 projects:
   - icon: project
