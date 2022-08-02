@@ -7,7 +7,7 @@ heroImage: /logo.svg
 heroText: 你博客的名称
 heroFullScreen: true
 tagline: 你可以在这里放置你的口号与标语
-bgImage: /logo.svg
+bgImage: https://raw.githubusercontent.com/anarchical/anarchical.github.io/main/docs/.vuepress/public/bg.jpg
 redirectTo: /en
 projects:
   - icon: project
