@@ -55,23 +55,6 @@ export default hopeTheme({
   },
 
   locales: {
-    "/en/": {
-      // navbar
-      navbar: navbar.en,
-
-      // sidebar
-      sidebar: sidebar.en,
-
-      footer: "Default footer",
-
-      displayFooter: true,
-
-      blog: {
-        description: "Aaa FrontEnd programmer",
-        intro: "/en/intro.html",
-      },
-    },
-
     /**
      * Chinese locale config
      */
