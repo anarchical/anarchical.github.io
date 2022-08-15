@@ -3,11 +3,11 @@ import * as navbar from "./navbar";
 import * as sidebar from "./sidebar";
 
 export default hopeTheme({
-  hostname: "https://anarchical.github.io/",
+  hostname: "https://anarchical.github.io",
 
   author: {
     name: "leaf",
-    url: "https://anarchical.github.io/",
+    url: "https://anarchical.github.io",
   },
 
   iconAssets: "iconfont",

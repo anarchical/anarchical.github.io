@@ -2,7 +2,7 @@ import { sidebar } from "vuepress-theme-hope";
 import { redis } from "./redis";
 
 export const sidebarConfig = sidebar({
-  "/note/middleware/redis/": redis,
+  "/note/middleware/": redis,
   "/": [
     "",
     "slide",
