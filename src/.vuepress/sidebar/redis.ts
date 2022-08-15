@@ -4,6 +4,6 @@ export const redis = arraySidebar([
   {
     text: "Redis",
     collapsable: true,
-    children: [ "00_index", "01_index"],
+    children: [ "test01", "test02"],
   }
 ]);
