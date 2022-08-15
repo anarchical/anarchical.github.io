@@ -60,10 +60,10 @@ export default hopeTheme({
      */
     "/": {
       // navbar
-      navbar: navbar.zh,
+      navbar: navbar.navbarConfig,
 
       // sidebar
-      sidebar: sidebar.zh,
+      sidebar: sidebar.sidebarConfig,
 
       footer: "默认页脚",
 
