@@ -3,11 +3,11 @@ import * as navbar from "./navbar";
 import * as sidebar from "./sidebar";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-v2-demo.mrhope.site",
+  hostname: "https://anarchical.github.io/",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mrhope.site",
+    name: "leaf",
+    url: "https://anarchical.github.io/",
   },
 
   iconAssets: "iconfont",
