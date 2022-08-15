@@ -117,4 +117,4 @@ dist
 .pnp.*
 
 .idea
-/docs/.vuepress/.temp/
+/src/.vuepress/.temp/
