@@ -45,6 +45,5 @@ export const sidebarConfig = sidebar({
         },
       ],
     },
-    "note/"
   ],
 });
