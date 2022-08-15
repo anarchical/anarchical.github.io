@@ -55,17 +55,13 @@ export default hopeTheme({
   },
 
   locales: {
-    /**
-     * Chinese locale config
-     */
+
     "/": {
       // navbar
       navbar: navbar.navbarConfig,
 
       // sidebar
       sidebar: sidebar.sidebarConfig,
-
-      footer: "默认页脚",
 
       displayFooter: true,
 
