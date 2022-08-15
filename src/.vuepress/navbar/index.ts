@@ -51,7 +51,7 @@ export const navbarConfig = navbar([
       {
         text: "中间件",
         children: [
-          {text: "redis", icon: "note", link: "middleware/redis/"}
+          {text: "redis", icon: "note", link: "middleware/redis"}
         ],
       },
     ],
