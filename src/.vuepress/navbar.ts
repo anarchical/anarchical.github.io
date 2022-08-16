@@ -46,7 +46,7 @@ export const navbarConfig = navbar([
   {
     text: "笔记",
     icon: "note",
-    prefix: "/note/",
+    prefix: "/note/middleware/",
     children: [
       {
         text: "中间件",
