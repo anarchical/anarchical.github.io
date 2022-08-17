@@ -68,7 +68,7 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
-        description: "anarch",
+        description: "communist anarch",
         intro: "/intro.html",
       },
     },
