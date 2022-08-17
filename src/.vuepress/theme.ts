@@ -6,7 +6,7 @@ export default hopeTheme({
   hostname: "https://anarchical.github.io",
 
   author: {
-    name: "leaf",
+    name: "yyq",
     url: "https://anarchical.github.io",
   },
 
@@ -66,7 +66,7 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
-        description: "一个前端开发者",
+        description: "anarch",
         intro: "/intro.html",
       },
     },
