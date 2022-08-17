@@ -1,4 +1,4 @@
-import { hopeTheme } from "vuepress-theme-hope";
+import {hopeTheme} from "vuepress-theme-hope";
 import * as navbar from "./navbar";
 import * as sidebar from "./sidebar";
 
@@ -19,7 +19,7 @@ export default hopeTheme({
   docsDir: "src",
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
-  
+
   contributors: false,
 
   blog: {
@@ -83,20 +83,6 @@ export default hopeTheme({
   plugins: {
     blog: {
       autoExcerpt: true,
-    },
-    search: {
-      // https://v2.vuepress.vuejs.org/zh/reference/plugin/search.html
-      // 排除首页
-      isSearchable: (page) => page.path !== "/",
-      maxSuggestions: 10,
-      hotKeys: ["s", "/"],
-      // 用于在页面的搜索索引中添加额外字段
-      getExtraFields: () => [],
-      locales: {
-        "/": {
-          placeholder: "搜索",
-        },
-      },
     },
   },
 });
