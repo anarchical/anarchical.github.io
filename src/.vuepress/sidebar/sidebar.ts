@@ -1,8 +1,8 @@
 import { sidebar } from "vuepress-theme-hope";
-import { redis } from "./sidebar/redis";
+import { redis } from "./redis";
 
 export const sidebarConfig = sidebar({
-  "/note/middleware/": redis,
+  "/note/database/": redis,
   "/": [
     "",
     "slide",
@@ -16,7 +16,7 @@ export const sidebarConfig = sidebar({
     {
       text: "文章",
       icon: "note",
-      prefix: "posts/",
+      prefix: "blog/",
       children: [
         {
           text: "文章 1-4",

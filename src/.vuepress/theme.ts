@@ -1,6 +1,6 @@
 import {hopeTheme} from "vuepress-theme-hope";
-import * as navbar from "./navbar";
-import * as sidebar from "./sidebar";
+import {navbarConfig} from "./navbar/navbar";
+import {sidebarConfig} from "./sidebar/sidebar";
 
 export default hopeTheme({
   hostname: "https://anarchical.github.io",
@@ -20,39 +20,18 @@ export default hopeTheme({
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
+  navbarLayout: {
+    left: ["Brand"],
+    center: ["Links"],
+    right: ["Search", "Outlook", "Repo"],
+  },
+
   contributors: false,
 
   blog: {
     medias: {
-      Baidu: "https://example.com",
-      Bitbucket: "https://example.com",
-      Dingding: "https://example.com",
-      Discord: "https://example.com",
-      Dribbble: "https://example.com",
-      Email: "https://example.com",
-      Evernote: "https://example.com",
-      Facebook: "https://example.com",
-      Flipboard: "https://example.com",
-      Gitee: "https://example.com",
-      GitHub: "https://example.com",
-      Gitlab: "https://example.com",
-      Gmail: "https://example.com",
-      Instagram: "https://example.com",
-      Lines: "https://example.com",
-      Linkedin: "https://example.com",
-      Pinterest: "https://example.com",
-      Pocket: "https://example.com",
-      QQ: "https://example.com",
-      Qzone: "https://example.com",
-      Reddit: "https://example.com",
-      Rss: "https://example.com",
-      Steam: "https://example.com",
-      Twitter: "https://example.com",
-      Wechat: "https://example.com",
-      Weibo: "https://example.com",
-      Whatsapp: "https://example.com",
-      Youtube: "https://example.com",
-      Zhihu: "https://example.com",
+      GitHub: "https://github.com/anarchical",
+      Steam: "https://steamcommunity.com/profiles/76561198109273136/",
     },
   },
 
@@ -60,15 +39,14 @@ export default hopeTheme({
 
     "/": {
       // navbar
-      navbar: navbar.navbarConfig,
-
+      navbar: navbarConfig,
       // sidebar
-      sidebar: sidebar.sidebarConfig,
+      sidebar: sidebarConfig,
 
       displayFooter: true,
 
       blog: {
-        description: "communist anarch",
+        description: "communist anarchist",
         intro: "/intro.html",
       },
     },
@@ -84,5 +62,14 @@ export default hopeTheme({
     blog: {
       autoExcerpt: true,
     },
+
+    comment: {
+      provider: "Giscus",
+      repo: "anarchical/anarchical.github.io",
+      repoId: "R_kgDOHuDVjQ",
+      category: "Announcements",
+      categoryId: "DIC_kwDOHuDVjc4CQ4ea",
+      mapping: "pathname",
+    }
   },
 });

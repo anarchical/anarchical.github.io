@@ -2,11 +2,10 @@ import {navbar} from "vuepress-theme-hope";
 
 export const navbarConfig = navbar([
   "/",
-  {text: "使用指南", icon: "creative", link: "/guide/"},
   {
-    text: "博文",
+    text: "Blog",
     icon: "edit",
-    prefix: "/posts/",
+    prefix: "/blog/",
     children: [
       {
         text: "文章 1-4",
@@ -44,17 +43,22 @@ export const navbarConfig = navbar([
     ],
   },
   {
-    text: "笔记",
+    text: "Note",
     icon: "note",
-    prefix: "/note/middleware/",
+    prefix: "/note/",
     children: [
       {
-        text: "中间件",
+        text: "数据库",
         children: [
-          {text: "redis", icon: "note", link: "redis/"},
+          {text: "MySQL", icon: "note", link: "database/redis/"},
+          {text: "Redis", icon: "note", link: "database/redis/"},
+          {text: "ElasticSearch", icon: "note", link: "database/redis/"},
 
         ],
       },
     ],
   },
+  {text: "Thinking", icon: "creative", link: "/guide/"},
+  {text: "Event", icon: "build", link: "/guide/"},
+
 ]);

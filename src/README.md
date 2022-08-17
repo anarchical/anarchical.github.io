@@ -2,7 +2,7 @@
 home: true
 layout: Blog
 icon: home
-title: 主页
+title: Home
 heroText: 𝒵
 heroFullScreen: true
 tagline: 革命尚未成功，同志仍需努力！</br>—— 毛泽东

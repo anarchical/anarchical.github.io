@@ -8,10 +8,11 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "leaf's brains",
-      description: "笔记、博客、杂想、事件",
+      title: "letterhead",
+      description: "note、blog、thinking、event",
     },
   },
+
   theme,
 
   plugins: [
@@ -23,7 +24,7 @@ export default defineUserConfig({
       getExtraFields: () => [],
       locales: {
         "/": {
-          placeholder: "Search",
+          placeholder: "search...",
         },
       },
     })
