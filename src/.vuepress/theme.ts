@@ -19,6 +19,8 @@ export default hopeTheme({
   docsDir: "src",
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
+  
+  contributors: false,
 
   blog: {
     medias: {
