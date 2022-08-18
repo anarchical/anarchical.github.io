@@ -3,7 +3,7 @@ home: true
 layout: Blog
 icon: home
 title: Home
-heroText:  
+heroText: 𝓛𝓮𝓽𝓽𝓮𝓻
 heroFullScreen: true
 projects:
   - icon: project
