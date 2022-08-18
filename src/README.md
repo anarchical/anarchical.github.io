@@ -3,7 +3,6 @@ home: true
 layout: Blog
 icon: home
 title: Home
-heroText: 𝒵
 heroFullScreen: true
 projects:
   - icon: project
