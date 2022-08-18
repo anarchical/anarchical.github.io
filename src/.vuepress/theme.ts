@@ -70,6 +70,13 @@ export default hopeTheme({
       category: "Announcements",
       categoryId: "DIC_kwDOHuDVjc4CQ4ea",
       mapping: "pathname",
-    }
+    },
+    
+    mdEnhance: {
+      enableAll: true,
+      presentation: {
+        plugins: ["highlight", "math", "search", "notes", "zoom"],
+      },
+    },
   },
 });
