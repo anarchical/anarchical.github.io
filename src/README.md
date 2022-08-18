@@ -5,7 +5,6 @@ icon: home
 title: Home
 heroText: 𝒵
 heroFullScreen: true
-tagline: 革命尚未成功，同志仍需努力！</br>—— 毛泽东
 projects:
   - icon: project
     name: 项目名称
