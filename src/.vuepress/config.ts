@@ -24,7 +24,7 @@ export default defineUserConfig({
       getExtraFields: () => [],
       locales: {
         "/": {
-          placeholder: "search...",
+          placeholder: "Search...",
         },
       },
     })
