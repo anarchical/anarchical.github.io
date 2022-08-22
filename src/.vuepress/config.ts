@@ -8,7 +8,7 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "letter",
+      title: "Letter",
       description: "note、blog、thinking、event",
     },
   },
