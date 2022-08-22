@@ -2,8 +2,8 @@ import {navbar} from "vuepress-theme-hope";
 
 export const navbarConfig = navbar([
   "/",
-  {text: "Category", icon: "categoryselected", link: "/category/"},
   {text: "Tag", icon: "tag", link: "/tag/"},
+  {text: "Category", icon: "categoryselected", link: "/category/"},
   {text: "Thinking", icon: "question", link: "/guide/"},
   {text: "Event", icon: "folder", link: "/guide/"},
   {
