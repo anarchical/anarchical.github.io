@@ -4,8 +4,8 @@ export const navbarConfig = navbar([
   "/",
   {text: "Tag", icon: "tag", link: "/tag/"},
   {text: "Category", icon: "categoryselected", link: "/category/"},
-  {text: "Thinking", icon: "question", link: "/guide/"},
   {text: "Event", icon: "folder", link: "/guide/"},
+  {text: "Thinking", icon: "question", link: "/guide/"},
   {
     text: "Blog",
     icon: "edit",
@@ -54,6 +54,7 @@ export const navbarConfig = navbar([
       {
         text: "数据库",
         children: [
+          {text: "Solr", link: "database/solr/"},
           {text: "MySQL", icon: "note", link: "database/redis/"},
           {text: "Redis", icon: "note", link: "database/redis/"},
           {text: "ElasticSearch", icon: "note", link: "database/redis/"},
