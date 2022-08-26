@@ -1,10 +1,13 @@
 import {sidebar} from "vuepress-theme-hope";
-import {redis} from "./redis";
-import {solr} from "./solr";
+import {redis} from "./sidebar/redis";
+import {solr} from "./sidebar/solr";
+import {docker} from "./sidebar/docker";
 
 export const sidebarConfig = sidebar({
-  "/note/database/": redis,
-  "/note/database/": solr,
+  "/note/database/redis": redis,
+  "/note/database/solr": solr,
+  "/note/devops/docker": docker,
+
   "/": [
     "",
     "slide",

@@ -55,10 +55,16 @@ export const navbarConfig = navbar([
         text: "数据库",
         children: [
           {text: "Solr", link: "database/solr/"},
-          {text: "MySQL", icon: "note", link: "database/redis/"},
+          // {text: "MySQL", icon: "note", link: "database/redis/"},
           {text: "Redis", icon: "note", link: "database/redis/"},
-          {text: "ElasticSearch", icon: "note", link: "database/redis/"},
+          // {text: "ElasticSearch", icon: "note", link: "database/redis/"},
 
+        ],
+      },
+      {
+        text: "运维",
+        children: [
+          {text: "Docker", link: "devops/docker/"},
         ],
       },
     ],

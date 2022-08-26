@@ -1,8 +1,8 @@
 import {arraySidebar} from "vuepress-theme-hope";
 
-export const solr = arraySidebar([
+export const docker = arraySidebar([
   {
-    text: "Solr实践",
+    text: "Docker",
     collapsable: true,
     children: [ "00install"],
   }

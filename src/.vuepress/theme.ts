@@ -1,6 +1,6 @@
 import {hopeTheme} from "vuepress-theme-hope";
-import {navbarConfig} from "./navbar/navbar";
-import {sidebarConfig} from "./sidebar/sidebar";
+import {navbarConfig} from "./navbar";
+import {sidebarConfig} from "./sidebar";
 
 export default hopeTheme({
   hostname: "https://anarchical.github.io",
