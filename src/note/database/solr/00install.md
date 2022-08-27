@@ -12,10 +12,15 @@ category: solr
 https://hub.docker.com/_/solr
 
 1. 拉取镜像
+
    `docker pull solr:8.11.2`
+
 2. 运行镜像，生成容器
+
    `docker run --name my-solr -d -p 8983:8983 solr:8.11.2`
+
 3. 进入容器实例进行配置
+
    `docker exec -u root -it my-solr /bin/bash`
 
 ## 配置
@@ -61,6 +66,5 @@ security.json
 ### 常用命令
 
 1. 创建 Solr 实例
-   `docker exec -it {container_id} solr create_core -c {instance_solr}`
-2. 
 
+   `docker exec -it {container_id} solr create_core -c {instance_solr}`
