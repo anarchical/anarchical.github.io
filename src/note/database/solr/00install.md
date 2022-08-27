@@ -6,7 +6,10 @@ category: solr
 ---
 
 ## 安装
+
 ### Docker 版本
+
+https://hub.docker.com/_/solr
 
 1. 拉取镜像
    `docker pull solr:8.11.2`
@@ -23,13 +26,41 @@ https://solr.apache.org/guide/solr/latest/deployment-guide/basic-authentication-
 
 docker 容器中需要将 security.json 配置到 /var/solr/data/ 目录下
 
+security.json
+以下为 root:123456 的配置示例
+```json
+{
+  "authentication": {
+    "blockUnknown": true,
+    "class": "solr.BasicAuthPlugin",
+    "credentials": {
+      "root": "Z5dtYJIw3ADbjHRCJb+GQnlJb0Z6LKGth3/qky2oxOM= X6XSApBJQh2zebpPKjP8h4fPVJcDc7sKfadfdNRGghQ="
+    },
+    "realm": "My Solr users",
+    "forwardCredentials": false
+  },
+  "authorization": {
+    "class": "solr.RuleBasedAuthorizationPlugin",
+    "permissions": [
+      {
+        "name": "security-edit",
+        "role": "admin"
+      }
+    ],
+    "user-role": {
+      "root": "admin"
+    }
+  }
+}
+```
+
 ### 中文分词器配置
 
 ## 使用
 
 ### 常用命令
 
-```shell
-
-```
+1. 创建 Solr 实例
+   `docker exec -it {container_id} solr create_core -c {instance_solr}`
+2. 
 
