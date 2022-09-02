@@ -31,7 +31,7 @@ projects:
     desc: 伙伴详细介绍
     link: https://你的伙伴链接
 
-  - icon: /logo.svg
+  - icon: /ghost.png
     name: 自定义项目
     desc: 自定义详细介绍
     link: https://你的自定义链接

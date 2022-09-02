@@ -3,6 +3,7 @@ import {navbarConfig} from "./navbar";
 import {sidebarConfig} from "./sidebar";
 
 export default hopeTheme({
+
   hostname: "https://anarchical.github.io",
 
   author: {
@@ -12,7 +13,7 @@ export default hopeTheme({
 
   iconAssets: "iconfont",
 
-  logo: "/logo.svg",
+  logo: "/ghost.png",
 
   repo: "anarchical/anarchical.github.io",
 
@@ -71,12 +72,16 @@ export default hopeTheme({
       categoryId: "DIC_kwDOHuDVjc4CQ4ea",
       mapping: "pathname",
     },
-    
+
     mdEnhance: {
       enableAll: true,
       presentation: {
         plugins: ["highlight", "math", "search", "notes", "zoom"],
       },
     },
+
+    pwa: {
+      favicon: "/ghost.png",
+    }
   },
 });

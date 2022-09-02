@@ -63,7 +63,12 @@ export const navbarConfig = navbar([
         children: [
           {text: "Docker", link: "devops/docker/"},
         ],
-      },
+      }, {
+        text: "工具",
+        children: [
+          {text: "Maven", link: "tool/maven/"},
+        ],
+      }
     ],
   },
   {text: "Event", icon: "folder", link: "/guide/"},

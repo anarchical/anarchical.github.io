@@ -2,11 +2,14 @@ import {sidebar} from "vuepress-theme-hope";
 import {redis} from "./sidebar/redis";
 import {solr} from "./sidebar/solr";
 import {docker} from "./sidebar/docker";
+import {maven} from "./sidebar/maven";
 
 export const sidebarConfig = sidebar({
   "/note/database/redis": redis,
   "/note/database/solr": solr,
   "/note/devops/docker": docker,
+  "/note/tool/maven": maven,
+
 
   "/": [
     "",

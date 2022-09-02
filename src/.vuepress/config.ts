@@ -5,6 +5,8 @@ import theme from "./theme";
 export default defineUserConfig({
   base: "/",
 
+  shouldPrefetch: false,
+
   locales: {
     "/": {
       lang: "zh-CN",
@@ -17,11 +19,8 @@ export default defineUserConfig({
 
   plugins: [
     searchPlugin({
-      isSearchable: (page) => page.path !== "/",
       maxSuggestions: 10,
       hotKeys: ["s", "/"],
-      // 用于在页面的搜索索引中添加额外字段
-      getExtraFields: () => [],
       locales: {
         "/": {
           placeholder: "Search...",
