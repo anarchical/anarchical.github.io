@@ -10,3 +10,18 @@ Maven 中通过 xml 形式的坐标来指定需要引用的 jar 包和相关依�
 
 通常通过 `gruopId artifactId version` 三个坐标可以定位一个依赖
 
+### 标签内容
+
+* `modelVersion` ：表示 pom.xml 文件内容的版本，一般为 4.0.0
+* `groupId` ：表示公司或组织开发的某个项目
+* `artifactId` ：模块工程名称
+* `version` ：模板版本
+* `packaging` ：当前模块打包方式
+  * jar 表示生成 jar包
+  * war 表示生成war包
+  * pom 表示此模块是用来管理其它模块的
+* `properties` ：定义的属性值，可以自定义添加属性
+  * `project.build.sorceEncoding` ：maven 在构建过程中读取源码时所用的字符集，通常为 UTF-8
+* `dependencies` ：配置模块的依赖信息
+  * `dependency` ：配置具体的依赖信息
+    * `scope` ：配置当前依赖作用的范围
