@@ -4,6 +4,11 @@ export const maven = arraySidebar([
   {
     text: "maven实战",
     collapsable: true,
-    children: [ "config"],
-  }
+    children: ["00install"],
+  },
+  {
+    text: "maven概念",
+    collapsable: true,
+    children: ["01concept", "02command"],
+  },
 ]);

@@ -5,5 +5,7 @@ category: maven
 ---
 
 ## 概述
-Maven
+> 官网：https://maven.apache.org/
+
+Maven 是一个 java 项目的快速构建工具，是一种依赖管理工具
 
