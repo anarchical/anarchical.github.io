@@ -1,5 +1,5 @@
 ---
-title: Maven 安装
+title: 坐标
 date: 2022-09-04
 category: maven
 ---
