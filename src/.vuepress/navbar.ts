@@ -71,6 +71,5 @@ export const navbarConfig = navbar([
       }
     ],
   },
-  {text: "Event", icon: "folder", link: "/guide/"},
   {text: "Thinking", icon: "question", link: "/guide/"},
 ]);
