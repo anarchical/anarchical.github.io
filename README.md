@@ -13,9 +13,19 @@ pnpm install
 pnpm docs:dev
 ```
 
+### clean run project
+```shell
+pnpm docs:clean-dev
+```
+
 ### build project
 ```shell
 pnpm docs:build
+```
+
+### update project
+```shell
+pnpm add vuepress@next vuepress-theme-hope@next && pnpm i && pnpm up
 ```
 
 
