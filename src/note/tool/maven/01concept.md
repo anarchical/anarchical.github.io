@@ -26,12 +26,12 @@ Maven 中通过 xml 形式的坐标来指定需要引用的 jar 包和相关依�
   * `dependency` ：配置具体的依赖信息
     * `scope` ：配置当前依赖作用的范围，默认为 `compile` 
       * compile ：作用于全局，会导致依赖传递
-      * test ：作用于 test 阶段，不会依赖传递；例如 JUnit
+      * test ：作用于测试阶段，不会依赖传递；例如 JUnit
       * provided ：作用于编译、测试阶段，不会依赖传递；例如 servlet-api，运行时 tomcat 容易已经提供，不需要再次引用
       * runtime ：作用于运行、测试阶段，在编译代码时无效，会导致依赖传递；例如 JDBC，在代码编译时只需要 JDK 的 JDBC 接口，只有运行时才需要具体的 JDBC 驱动
       * system ：
       * import ：
     * `exclusions` ：依赖排除
       * `exclusion` ：通过指定 groupId 和 artifactId 排除依赖，防止依赖冲突
-    * `optional` ：
+    * `optional` ：可选值 true，false，使当前依赖不会传递到子项目中，同时也可以避免 jar 包冲突，默认为 false
 
