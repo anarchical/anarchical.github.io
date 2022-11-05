@@ -91,11 +91,13 @@ ubuntu阿里源地址：https://developer.aliyun.com/mirror/ubuntu
 
 ## 安装VM-Tools
 
-1. 如果使用的是VMware虚拟机，建议安装 VM-Tools
+1. 如果使用的是VMware虚拟机，建议安装
 
    `apt-get install -y open-vm-tools`
 
    `apt-get install -y open-vm-tools-desktop`
+
+   
 
 ## 开启SSH连接服务
 
