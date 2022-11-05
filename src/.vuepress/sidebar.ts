@@ -3,12 +3,17 @@ import {redis} from "./sidebar/redis";
 import {solr} from "./sidebar/solr";
 import {docker} from "./sidebar/docker";
 import {maven} from "./sidebar/maven";
+import {centos} from "./sidebar/centos";
+import {ubuntu} from "./sidebar/ubuntu";
 
 export const sidebarConfig = sidebar({
   "/note/database/redis": redis,
   "/note/database/solr": solr,
   "/note/devops/docker": docker,
   "/note/tool/maven": maven,
+
+  "blog/linux/centos": centos,
+  "blog/linux/ubuntu": ubuntu,
 
 
   "/": [

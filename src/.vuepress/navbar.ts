@@ -9,6 +9,15 @@ export const navbarConfig = navbar([
     prefix: "/blog/",
     children: [
       {
+        text: "Linux",
+        icon: "edit",
+        prefix: "linux/",
+        children: [
+          {text: "CentOS", icon: "edit", link: "centos/"},
+          {text: "Ubuntu", icon: "edit", link: "ubuntu/"},
+        ],
+      },
+      {
         text: "文章 1-4",
         icon: "edit",
         prefix: "article/",

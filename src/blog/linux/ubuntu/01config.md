@@ -13,9 +13,9 @@ category: ubuntu
 
 2. 修改 50-ubuntu.conf 文件
 
+   `sudo gedit /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf`
+
    ```shell
-   sudo gedit /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf
-   
    # 文件末尾新增
    greeter-show-manual-login=true
    all-guest=false
@@ -23,27 +23,27 @@ category: ubuntu
 
 3. 修改 gdm-autologin 文件
 
+   `sudo gedit /etc/pam.d/gdm-autologin`
+
    ```shell
-   sudo gedit /etc/pam.d/gdm-autologin
-   
    # 注释掉以下内容
    # auth required pam_succeed_if.so user != root quiet_success
    ```
 
 4. 修改 gdm-password 文件
 
+   `sudo gedit /etc/pam.d/gdm-password`
+
    ```shell
-   sudo gedit /etc/pam.d/gdm-password
-   
    # 注释掉以下内容
    # auth required pam_succeed_if.so user != root quiet_success
    ```
 
 5. 修改 /root/.profile 文件
 
+   `sudo gedit /root/.profile`
+
    ```shell
-   sudo gedit /root/.profile
-   
    # 修改 mesg n 2> /dev/null || true 为以下内容
    #mesg n 2> /dev/null || true
    tty -s && mesg n || true
@@ -63,9 +63,9 @@ ubuntu阿里源地址：https://developer.aliyun.com/mirror/ubuntu
 
 2. 替换 sources.list 内容
 
+   `gedit /etc/apt/sources.list`
+
    ```shell
-   gedit /etc/apt/sources.list
-   
    #替换以下内容
    deb https://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
    deb-src https://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
@@ -95,11 +95,18 @@ ubuntu阿里源地址：https://developer.aliyun.com/mirror/ubuntu
 
    `apt-get install -y openssh-server`
 
-2. 开启ssh服务
+2. 修改 sshd_config 文件
 
-   `service ssh start`
+   `vim /etc/ssh/sshd_config`
 
-   
+   ```shell
+   # 修改 #PermitRootLogin prohibit-password 为以下内容
+   PermitRootLogin yes
+   ```
+
+3. 重启ssh服务
+
+   `service ssh restart`
 
 ## 配置静态网络
 
@@ -107,7 +114,30 @@ ubuntu阿里源地址：https://developer.aliyun.com/mirror/ubuntu
 
    `apt-get install -y net-tools`
 
-2. 
+2. 使用 `ifconfig` 查看网卡名称
+
+3. 配置 01-network-manager-all.yaml 文件
+
+   `vim /etc/netplan/01-network-manager-all.yaml`
+
+   ```yaml
+   network:
+     ethernets:
+       ens33:
+         dhcp4: false
+         addresses: [192.168.58.10/24]
+         gateway4: 192.168.58.2
+         nameservers:
+           addresses: [192.168.58.2]
+     version: 2
+     renderer: NetworkManager
+   ```
+
+4. 重启网卡服务
+
+   `netplan apply`
+
+   
 
 
 
