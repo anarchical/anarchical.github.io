@@ -55,7 +55,7 @@ category: ubuntu
 
 ## 阿里源下载配置
 
-ubuntu阿里源地址：https://developer.aliyun.com/mirror/ubuntu
+ubuntu阿里源地址：[https://developer.aliyun.com/mirror/ubuntu](https://developer.aliyun.com/mirror/ubuntu)
 
 1. 备份原来的配置文件
 

@@ -7,5 +7,5 @@ category: ubuntu
 
 ## 安装
 
-官网：https://ubuntu.com/
+官网：[https://ubuntu.com/](https://ubuntu.com/)
 
