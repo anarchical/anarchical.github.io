@@ -12,8 +12,8 @@ export const sidebarConfig = sidebar({
   "/note/devops/docker": docker,
   "/note/tool/maven": maven,
 
-  "blog/linux/centos": centos,
-  "blog/linux/ubuntu": ubuntu,
+  "/blog/linux/centos": centos,
+  "/blog/linux/ubuntu": ubuntu,
 
 
   "/": [
