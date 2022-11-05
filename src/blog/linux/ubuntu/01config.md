@@ -66,7 +66,7 @@ ubuntu阿里源地址：https://developer.aliyun.com/mirror/ubuntu
    `gedit /etc/apt/sources.list`
 
    ```shell
-   #替换以下内容
+   #替换以下内容，以ubuntu20.4为例子，其它的版本参照阿里源官网地址
    deb https://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
    deb-src https://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
    
@@ -88,6 +88,14 @@ ubuntu阿里源地址：https://developer.aliyun.com/mirror/ubuntu
    `apt-get update && apt-get upgrade -y`
 
 
+
+## 安装VM-Tools
+
+1. 如果使用的是VMware虚拟机，建议安装 VM-Tools
+
+   `apt-get install -y open-vm-tools`
+
+   `apt-get install -y open-vm-tools-desktop`
 
 ## 开启SSH连接服务
 
