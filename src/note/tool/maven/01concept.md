@@ -22,6 +22,7 @@ Maven 中通过 xml 形式的坐标来指定需要引用的 jar 包和相关依�
   * pom 表示此模块是用来管理其它模块的，例如父工程
 * `properties` ：定义的属性值，可以自定义添加属性
   * `project.build.sorceEncoding` ：maven 在构建过程中读取源码时所用的字符集，通常为 UTF-8
+  * `my.label` ：自定义标签，通过 ${} 表达式可以动态获取，如 ${my.label}
 * `dependencies` ：配置模块的依赖信息
   * `dependency` ：配置具体的依赖信息
     * `scope` ：配置当前依赖作用的范围，默认为 `compile` 
@@ -34,4 +35,5 @@ Maven 中通过 xml 形式的坐标来指定需要引用的 jar 包和相关依�
     * `exclusions` ：依赖排除
       * `exclusion` ：通过指定 groupId 和 artifactId 排除依赖，防止依赖冲突
     * `optional` ：可选值 true，false，使当前依赖不会传递到子项目中，同时也可以避免 jar 包冲突，默认为 false
+* `dependencyManagement` ：依赖管理标签，并没有实际引入；使用此标签中声明的依赖时可以不写指定的版本号，如果指定了版本号，则会覆盖 dependencyManagement 中已经指定的版本号；一般用于父工程用于对子工程的依赖版本管理
 
