@@ -1,5 +1,5 @@
 ---
-title: Ubuntu 配置
+title: 配置
 date: 2022-11-05
 category: ubuntu
 

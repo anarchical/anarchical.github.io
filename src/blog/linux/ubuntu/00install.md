@@ -1,5 +1,5 @@
 ---
-title: Ubuntu 安装
+title: 安装
 date: 2022-11-05
 category: ubuntu
 
@@ -7,4 +7,5 @@ category: ubuntu
 
 ## 安装
 
-ubuntu 官网：https://ubuntu.com/
+官网：https://ubuntu.com/
+

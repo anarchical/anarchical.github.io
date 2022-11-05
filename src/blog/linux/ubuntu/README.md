@@ -1,8 +1,8 @@
 ---
-title: Docker
+title: Ubuntu
 date: 2022-08-26
-category: docker
+category: ubuntu
 ---
 
 ## 概述
-官网：https://www.docker.com/
+官网：https://ubuntu.com/
